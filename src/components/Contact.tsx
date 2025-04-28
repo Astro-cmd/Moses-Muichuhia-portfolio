@@ -67,13 +67,13 @@ const Contact = () => {
       icon: <Github className="w-5 h-5" />,
       title: "GitHub",
       value: "GitHub Profile",
-      link: "#"
+      link: "https://github.com/Astro-cmd"
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       title: "LinkedIn",
       value: "LinkedIn Profile",
-      link: "#"
+      link: "https://www.linkedin.com/in/astro-moses/"
     }
   ];
 

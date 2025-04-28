@@ -27,7 +27,8 @@ const Hero = () => {
 
             <p className="text-lg md:text-xl text-foreground/80 max-w-2xl">
               Passionate backend developer skilled in building scalable, secure, and robust APIs and web applications. 
-              I enjoy solving real-world problems with clean and efficient code.
+              I have a strong foundation in Python, Django, and Flask, and I'm always eager to learn new technologies and improve my skills.
+              I thrive in collaborative environments and enjoy tackling complex challenges.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
@@ -76,11 +77,14 @@ const Hero = () => {
           <div className="mt-12 md:mt-0 flex-1 flex justify-center slide-in-right animate-float">
             <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 flex items-center justify-center animate-glow">
               <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full bg-background flex items-center justify-center relative overflow-hidden shadow-xl">
-                <span className="text-9xl font-bold text-primary/10 absolute animate-pulse">AW</span>
-                <div className="z-10 text-center">
-                  <p className="font-medium text-xl text-primary">Backend</p>
-                  <p className="font-medium text-xl text-primary">Developer</p>
-                </div>
+                {/* Simple img tag - place your image in public/images/ */}
+                <img
+                  src="public\images\meee.jpg" // Path to your image in public/ folder
+                  alt="Moses Muichuhia Wanjiku"
+                  className="w-full h-full object-cover rounded-full"
+                  width={288}
+                  height={288}
+                />
               </div>
             </div>
           </div>

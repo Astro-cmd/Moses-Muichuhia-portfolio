@@ -35,23 +35,40 @@ const Projects = () => {
       description: "A full-fledged e-commerce website developed using Django Rest API. It allows users to browse products, add to cart, and checkout.",
       technologies: ["Django", "Django Rest Framework", "PostgreSQL", "Docker"],
       demoLink: "https://boltshift.vercel.app/",
+      githubLink: "https://github.com/Astro-cmd/Boltshift-Backend",
+      status: "Completed"
+    },
+    {
+      title: "jirani Tours And Travels (Travel Agency Website)",
+      description: "A travel agency website that provides information about various travel packages and allows users to book trips.", 
+      
+      technologies: ["React", "Tailwind CSS", "Django Rest Framework", "PostgreSQL", "Docker"],
+      demoLink: "https://moses-portfolio.vercel.app/",
       githubLink: "#",
       status: "Completed"
     },
     {
-      title: "Jirani Tours and Travel",
-      description: "A Django-based tourism platform featuring destinations, packages, user management, and about us sections.",
-      technologies: ["Django", "Django Templates", "PostgreSQL"],
-      apps: ["users", "aboutus", "destinations", "packages"],
+      title: "Astro (Blog Website)",
+      description: "A blog website where I share my thoughts and experiences on various topics. Built with Next.js and Tailwind CSS.",
+      technologies: ["Next.js", "Tailwind CSS"],
+      demoLink: "https://moses-blog.vercel.app/",
+      githubLink: "#",
+      status: "Completed"
+    },
+    {
+      title: "codeIn-arena (Online Coding Platform)",
+      description: "An online coding platform that allows users to practice coding problems, participate in contests, and improve their coding skills.",
+      technologies: ["Django", "Django Rest Framework", "PostgreSQL", "Docker"," React", "Tailwind CSS"],
+      apps: ["Frontend", "Backend"],
       githubLink: "#",
       status: "In Progress"
     },
     {
-      title: "Personal Finance Management System",
+      title: "Mo-wallet (Finance Management App)",
       description: "A platform designed to help users manage their finances effectively. Features include expense tracking, budget management, financial analytics, and spending predictions.",
       technologies: ["Django", "Django Rest Framework", "PostgreSQL", "Chart.js"],
-      githubLink: "#",
-      status: "In Progress"
+      githubLink: "https://github.com/Astro-cmd/Mo-wallet",
+      status: "In completion"
     }
   ];
 
