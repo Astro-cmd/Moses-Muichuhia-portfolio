@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 
 const Skills = () => {
@@ -77,7 +76,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div 
               key={category.title} 
-              className="bg-background p-6 rounded-lg shadow-md"
+              className="card-hover bg-background p-6 rounded-lg shadow-md"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <h3 className="text-xl font-semibold mb-4 text-primary">{category.title}</h3>

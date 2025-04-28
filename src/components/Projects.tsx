@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -68,7 +67,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={project.title} 
-              className="overflow-hidden transition-all duration-300 hover:shadow-lg border-border hover:border-primary/20" 
+              className="card-hover overflow-hidden transition-all duration-300 hover:shadow-lg border-border hover:border-primary/20" 
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="h-2 bg-gradient-to-r from-primary to-secondary"></div>

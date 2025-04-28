@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -96,7 +95,7 @@ const Contact = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {contactInfo.map((item, index) => (
-                <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow">
+                <Card key={index} className="card-hover overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-1 bg-primary"></div>
                   <CardContent className="p-4 flex items-start space-x-4">
                     <div className="bg-primary/10 p-2 rounded-md mt-1">

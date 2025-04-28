@@ -36,9 +36,7 @@
 
     --radius: 0.75rem;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -46,6 +44,49 @@
   body {
     @apply bg-purple-dark text-foreground font-sans min-h-screen;
     background-image: radial-gradient(circle at center, rgba(155,135,245,0.15) 0%, rgba(26,11,46,1) 70%);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes glow {
+    0%, 100% { filter: brightness(100%); }
+    50% { filter: brightness(150%); }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 
   .glow-effect {
@@ -64,11 +105,13 @@
   }
 
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 opacity-0;
+    animation: scaleIn 0.6s ease-out forwards;
   }
 
   .section-title {
     @apply text-3xl font-bold mb-12 text-center relative text-white;
+    animation: glow 3s infinite;
   }
   
   .section-title::after {
@@ -92,6 +135,22 @@
     transform-origin: left;
   }
 
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 3s infinite;
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
   .animate-on-scroll {
     opacity: 0;
     transform: translateY(20px);
@@ -101,5 +160,13 @@
   .animate-on-scroll.animate {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    @apply transform -translate-y-2 shadow-neon;
   }
 }

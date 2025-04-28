@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDownCircle } from "lucide-react";
 
@@ -7,7 +6,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-to-b from-background to-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
         <div className="flex flex-col md:flex-row md:items-center md:space-x-12">
-          <div className="flex-1 space-y-6 animate-fade-in">
+          <div className="flex-1 space-y-6 slide-in-left">
             <div>
               <h2 className="text-lg md:text-xl font-medium text-primary">Hello, I'm</h2>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-2">
@@ -66,10 +65,10 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="mt-12 md:mt-0 flex-1 flex justify-center animate-fade-in" style={{animationDelay: "0.3s"}}>
-            <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 flex items-center justify-center">
+          <div className="mt-12 md:mt-0 flex-1 flex justify-center slide-in-right animate-float">
+            <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 flex items-center justify-center animate-glow">
               <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full bg-background flex items-center justify-center relative overflow-hidden shadow-xl">
-                <span className="text-9xl font-bold text-primary/10 absolute">AW</span>
+                <span className="text-9xl font-bold text-primary/10 absolute animate-pulse">AW</span>
                 <div className="z-10 text-center">
                   <p className="font-medium text-xl text-primary">Backend</p>
                   <p className="font-medium text-xl text-primary">Developer</p>
