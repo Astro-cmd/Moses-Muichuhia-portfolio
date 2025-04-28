@@ -1,7 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDownCircle } from "lucide-react";
+import TypeWriter from "./TypeWriter";
 
 const Hero = () => {
+  const jobTitles = [
+    "Backend Developer",
+    "Python Developer",
+    "Data Analyst",
+    "Software Engineer"
+  ];
+
   return (
     <section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-to-b from-background to-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
@@ -12,9 +20,9 @@ const Hero = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-2">
                 Moses Muichuhia Wanjiku <span className="block md:inline">(Astro)</span>
               </h1>
-              <p className="text-xl md:text-2xl font-medium text-muted-foreground mt-4">
-                Backend Developer | Python & Django Enthusiast
-              </p>
+              <div className="text-xl md:text-2xl font-medium text-muted-foreground mt-4">
+                <TypeWriter words={jobTitles} />
+              </div>
             </div>
 
             <p className="text-lg md:text-xl text-foreground/80 max-w-2xl">
