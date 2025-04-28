@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,8 +61,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
-			},
+				},
+        
+        // Custom theme colors
+        purple: {
+          DEFAULT: '#9B87F5',
+          dark: '#1A0B2E',
+          light: '#D6BCFA',
+          glow: 'rgba(155, 135, 245, 0.15)'
+        },
+        neon: {
+          purple: '#BA45F0',
+          pink: '#FF56F6',
+          blue: '#45CCF0'
+        }
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'purple-glow': 'radial-gradient(circle, rgba(155,135,245,0.15) 0%, rgba(26,11,46,1) 70%)',
+      },
+      boxShadow: {
+        'neon': '0 0 20px rgba(155, 135, 245, 0.5)',
+        'neon-strong': '0 0 30px rgba(155, 135, 245, 0.8)'
+      },
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
