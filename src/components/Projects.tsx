@@ -51,6 +51,7 @@ const Projects = () => {
       description: "An online coding platform that allows users to practice coding problems, participate in contests, and improve their coding skills.",
       technologies: ["Django", "Django Rest Framework", "PostgreSQL", "Docker"," React", "Tailwind CSS"],
       apps: ["Frontend", "Backend"],
+      demoLink: "https://codein-challenge-arena.vercel.app/",
       githubLink: "#",
       status: "In Progress"
     },
