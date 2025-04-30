@@ -39,15 +39,6 @@ const Projects = () => {
       status: "Completed"
     },
     {
-      title: "jirani Tours And Travels (Travel Agency Website)",
-      description: "A travel agency website that provides information about various travel packages and allows users to book trips.", 
-      
-      technologies: ["React", "Tailwind CSS", "Django Rest Framework", "PostgreSQL", "Docker"],
-      demoLink: "https://moses-portfolio.vercel.app/",
-      githubLink: "#",
-      status: "Completed"
-    },
-    {
       title: "Astro (Blog Website)",
       description: "A blog website where I share my thoughts and experiences on various topics. Built with Next.js and Tailwind CSS.",
       technologies: ["Next.js", "Tailwind CSS"],
