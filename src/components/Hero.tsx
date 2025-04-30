@@ -79,7 +79,7 @@ const Hero = () => {
               <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full bg-background flex items-center justify-center relative overflow-hidden shadow-xl">
                 {/* Simple img tag - place your image in public/images/ */}
                 <img
-                  src="public\images\meee.jpg" // Path to your image in public/ folder
+                  src="/images/meee.jpg" // Path to your image in public/ folder
                   alt="Moses Muichuhia Wanjiku"
                   className="w-full h-full object-cover rounded-full"
                   width={288}
