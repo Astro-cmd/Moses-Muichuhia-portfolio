@@ -54,7 +54,7 @@ const Hero = () => {
                 </svg>
               </a>
               <a 
-                href="#" 
+                href="https://github.com/Astro-cmd" 
                 className="text-foreground/70 hover:text-primary transition-colors"
                 aria-label="GitHub"
               >
@@ -63,7 +63,7 @@ const Hero = () => {
                 </svg>
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/astro-moses/" 
                 className="text-foreground/70 hover:text-primary transition-colors"
                 aria-label="LinkedIn"
               >
